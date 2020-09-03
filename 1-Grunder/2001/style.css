@@ -1,0 +1,12 @@
+body {
+background-color: black;
+background-image: url("./bilder/The_Earth_seen_from_Apollo_17.jpg");
+}
+
+h1 {
+    font-family: 'Unlock', cursive;
+    font-size: 100px;
+    color: white;
+    width: 600px;
+    margin-left: 100px;
+}
