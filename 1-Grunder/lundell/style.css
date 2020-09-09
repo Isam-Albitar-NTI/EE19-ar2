@@ -1,0 +1,24 @@
+body {
+background-image: url("./skane.jpg");
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: darkorange;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+color: yellow;
+    background-color: rgb(51, 69, 173);
+    width: 500px;
+    border: 5px solid yellow;
+    Padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+img {
+
+}
+
