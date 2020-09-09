@@ -1,0 +1,15 @@
+body {
+    background-image: url("./september-background-small.png");
+}
+
+h1 {
+    font-family: 'Concert One', cursive;
+    color: rgb(126, 30, 30);
+}
+
+p {
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
