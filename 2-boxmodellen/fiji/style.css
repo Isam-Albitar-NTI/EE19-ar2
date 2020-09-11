@@ -1,0 +1,35 @@
+body{
+    font-family: 'Trocchi', serif;
+    background: url("./bilder/frank-mckenna-OD9EOzfSOh0-unsplash.jpg");
+    color: white;
+}
+
+h1{
+    font-size: 80px;
+margin-top: 100px;
+margin-left: 200px;
+text-transform: uppercase;
+
+}
+
+h2{
+    font-size: 40px;
+    margin-left: 200px;
+}
+
+p{
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 600px;
+    text-transform: uppercase;
+    
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background: hsl(283, 79%, 53%);
+    padding: 15px 50px;
+}
