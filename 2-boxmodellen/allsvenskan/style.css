@@ -1,0 +1,43 @@
+body {
+    background: #0E204D url("./bilder/flow.png");
+    background-position: center top;
+}
+
+table {
+    width: 600px;
+    background: #FFF; 
+    font: 12px sans-serif; /* Shorthand = förkortning */
+    border-collapse: collapse; /* Ta bort vita avstånd */
+    Margin:auto;
+}
+
+caption {
+    background: #12326E;
+    color: #FFF;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+/*Andra raden är rosa */
+tr:nth-child(2) {
+    background: #E73088;
+}
+/* Varannan rad är ljusgrå */
+tr:nth-child(odd) {
+    background: #F5F5F5;
+}
+/* Första raden är mörkblå */
+tr:nth-child(1) {
+    background: #12326E;
+    color: #FFF;
+}
+
+th, td {
+padding: 10px;
+}
+
+img {
+    width: 15px;
+    margin-right: 20px;
+}
