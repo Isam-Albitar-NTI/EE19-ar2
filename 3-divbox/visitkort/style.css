@@ -1,0 +1,43 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: grey;
+}
+
+div {
+    background: #fff;
+    width: 640px;
+    height: 426px;
+    border-radius: 10px;
+    margin: 100px auto 0px auto;
+    background-image: url("./bilder/robin-worrall-H5Y2Nb8hreU-unsplash.jpg");
+    color: #fff;
+    box-shadow: 0 0 40px #fff;
+    padding-left: 100px; 
+    padding-top: 80px;
+}
+
+h1 {
+    font-family: 'Boogaloo', cursive;
+    color: #000;
+}
+
+h2 {
+    font-family: 'Hind Guntur', sans-serif;
+    color: #000;
+}
+
+p {
+    font-family: 'Playfair Display SC', serif;
+    color: #000;
+}
