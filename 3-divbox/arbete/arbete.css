@@ -1,0 +1,98 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans utseende */
+body.sida1 {
+background: url("./bilder/pattern.1.jpg");
+}
+body.sida2 {
+background: url("./bilder/pattern.2.jpg");
+}
+body.sida3 {
+background: url("./bilder/pattern.3.jpg");
+}
+body.sida4 {
+background: url("./bilder/pattern.4.jpg");
+}
+body.sida5 {
+background: url("./bilder/pattern.5.jpg");
+}
+body.sida6 {
+background: url("./bilder/pattern.6.jpg");
+}
+
+/* Boxens utseende */
+div.box1{
+background-color: #FFF;
+width: 600px; /* låser brädden */
+padding: 50px; /* Luft på insidan */
+margin: 100px auto 0 auto; /* I mitten på sidan */
+border: 5px dashed #555;
+}
+div.box2{
+background-color: rgba(15, 90, 189, 0.685);
+width: 600px; /* låser brädden */
+padding: 50px; /* Luft på insidan */
+margin: 100px auto 0 auto; /* I mitten på sidan */
+border: 5px dashed #555;
+}
+div.box3{
+background-color: rgb(197, 21, 21);
+width: 600px; /* låser brädden */
+padding: 50px; /* Luft på insidan */
+margin: 100px auto 0 auto; /* I mitten på sidan */
+border: 5px dashed #555;
+}
+div.box4{
+background-color: rgb(58, 180, 9);
+width: 600px; /* låser brädden */
+padding: 50px; /* Luft på insidan */
+margin: 100px auto 0 auto; /* I mitten på sidan */
+border: 5px dashed #555;
+}
+div.box5{
+background-color: rgb(199, 170, 7);
+width: 600px; /* låser brädden */
+padding: 50px; /* Luft på insidan */
+margin: 100px auto 0 auto; /* I mitten på sidan */
+border: 5px dashed #555;
+}
+div.box6{
+background-color: rgb(204, 25, 195);
+width: 600px; /* låser brädden */
+padding: 50px; /* Luft på insidan */
+margin: 100px auto 0 auto; /* I mitten på sidan */
+border: 5px dashed #555;
+}
+
+
+/* Innehållets utseende */
+h1{
+    font-family: 'Girassol', cursive;
+    color: black;
+    font-size: 50px;
+}
+
+p{
+    font-family: 'Eczar', serif;
+    color: black;
+    font-size: 30px;
+}
+
+a{
+text-decoration: none;
+color: rgb(18, 182, 223);
+}
+
+a:hover{
+    color: rgb(224, 24, 24);
+}
