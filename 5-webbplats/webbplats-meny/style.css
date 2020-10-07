@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Slabo+27px&family=Sniglet&display=swap');
+/* CSS HEX */
+:root {
+    --indigo-dye: #00507aff;
+    --maximum-red: #d62828ff;
+    --orange: #f77f00ff;
+    --maximum-yellow-red: #fcbf49ff;
+    --lemon-meringue: #eae2b7ff;
+}
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -10,47 +19,85 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 /* Sidans Utseende */
-body {
-
+.kontainer {
+    background: #999;
+    width: 800px;
+    margin: auto;
+    padding: 25px;
 }
 
-div.kontainer {
-
+/* Sidans rubriker */
+.kontainer h1 {
+    /* Gäller bara alla h1 inuti div.kontainer */
+    font-family: 'Sanchez', serif;
+    color: #00507aff;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-h1 {
-
+.kontainer h2 {
+    /* Gäller bara alla h2 inuti div.kontainer */
+    font-family: 'Slabo 27px', serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
 }
 
-ul {
-
+/* Menys Ut utseende */
+.kontainer ul {
+    list-style-type: none;
+    text-align: center;
 }
 
-li {
-
+.kontainer ul li {
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    display: inline;
 }
 
-h2 {
-
+.kontainer ul a {
+    /* Menyknapparna */
+    background: #f77f00ff;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 140px;
+    display: inline-block;
 }
 
-img {
-
+.kontainer ul a:hover {
+    /* När pekare är över */
+    background: #fcbf49ff;
+    box-shadow: none;
 }
 
-figure {
-
+.kontainer ul a.aktiv {
+    background: #d62828ff;
+}
+/* Bildrutans utseende */
+.kontainer figure {
+    background: #FFF;
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 1px 1px 5px #000;
+}
+.kontainer figure img {
+    width: 100%;
 }
 
-figcaption {
-
+.kontainer figure figcaption {
+    font-family: 'Slabo 27px', serif;
 }
 
-p {
-
+/* Sidans text */
+.kontainer p {
+    font-family: 'Slabo 27px', serif;
+    margin-top: 20px;
 }
 
-p.tack {
-    
+.kontainer p a {
+    background: var(--orange);
 }
-
