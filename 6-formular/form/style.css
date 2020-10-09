@@ -21,8 +21,11 @@ margin: auto;
 width: 500px;
 border-radius: 10px;
 padding: 30px;
+
+/* Två kolumner */
 display: grid;
 grid-template-columns: 100px auto;
+gap: 15px;
 }
 
 form label {
@@ -31,12 +34,34 @@ form label {
 
 form input {
     font-family: 'Roboto Mono', monospace;
-    margin-bottom: 20px;
+    
     padding: 5px;
     background: #999;
     color: #FFF;
     border: none;
     border-radius: 3px;
+}
+
+form input[type="radio"], form input [type="checkbox"] {
+background: #999;
+border: none;
+color: aqua;
+}
+
+form select {
+font-family: 'Roboto Mono', monospace;
+padding: 5px;
+background: #999;
+border: none;
+border-radius: 3px;
+}
+
+form textarea {
+font-family: 'Roboto Mono', monospace;
+padding: 5px;
+background: #999;
+border: none;
+border-radius: 3px;
 }
 
 form button {
