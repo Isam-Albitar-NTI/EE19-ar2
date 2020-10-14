@@ -1,0 +1,50 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+background-image: url("./bilder/kontakta.jpg");
+}
+
+.kontainer {
+    background: rgba(241, 230, 230, 0.473);
+    width: 600px;
+    margin: auto;
+    padding: 50px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.kontainer h1 {
+    font-size: 20px;
+}
+
+.kontainer p {
+   font-size: 15px;
+   
+}
+
+.kontainer form {
+   display: grid;
+   grid-template-columns: 150px auto;
+   gap: 15px;
+}
+
+.kontainer form label {
+
+}
+
+.kontainer form input {
+
+}
+
+.kontainer button {
+
+}
+
