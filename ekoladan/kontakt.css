@@ -15,25 +15,26 @@ background-image: url("./bilder/kontakta.jpg");
 
 .kontainer {
     background: rgba(241, 230, 230, 0.473);
-    width: 600px;
-    margin: auto;
+    width: 700px;
+    margin: 50px auto;
     padding: 50px;
     font-family: 'Courier Prime', monospace;
 }
 
 .kontainer h1 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .kontainer p {
    font-size: 15px;
-   
+   padding-bottom: 40px;
 }
 
 .kontainer form {
    display: grid;
    grid-template-columns: 150px auto;
    gap: 15px;
+   
 }
 
 .kontainer form label {
@@ -45,6 +46,8 @@ background-image: url("./bilder/kontakta.jpg");
 }
 
 .kontainer button {
-
+    background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: rgb(255, 0, 0);
+    font-weight: bold;
 }
 
