@@ -1,0 +1,50 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+background-image: url(./bilder/Zeta_middag.jpg);
+
+}
+
+.kontainer {
+width: 1200px;
+padding: 50px;
+margin: 100px auto;
+background: white;
+
+}
+
+.kontainer img {
+
+}
+
+.kontainer h1 {
+
+}
+
+.kontainer p {
+
+}
+
+.produkter {
+
+}
+
+.produkter img {
+width: 200px;
+display: grid;
+grid-template-columns: 60px 60px;
+}
+
+.produkter p {
+
+}
+

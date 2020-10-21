@@ -16,7 +16,9 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Sidhuvudets utseende */
 .sidhuvud {
-
+display: grid;
+grid-template-columns:auto auto;
+justify-content: space-between;
 }
 
 .sidhuvud img {
@@ -24,19 +26,27 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .sidhuvud ul {
-
+list-style-type: none; /* tar bort punkterna */
+margin: 30px 30px 0 0;
 }
 
 .sidhuvud li {
-
+display: inline; /* Horisontellt */
+margin-left: 30px;
 }
 
 .sidhuvud li a {
-
+text-decoration: none;
+color: #682F1C;
+font-size: 24px;
+text-transform: uppercase;
 }
 
 .sidhuvud li a:hover {
-
+color: #B6978A;
+}
+.sidhuvud li a.aktiv {
+color: #FCB352;
 }
 
 /* Rutornas utseende */
@@ -56,25 +66,33 @@ background: #EFDAC5;
 }
 
 .rutor .burgare {    
-
+text-align: center;
 }
 .rutor .burgare h1 {    
+    text-align: center;
     font-family: 'Lilita One', cursive;
     font-size: 48px;
-    color:  rgb(224, 157, 33);
+    color:  #8E5630;
+    margin-top: 150px;
 }
 .rutor .burgare h2 {    
+    text-align: center;
     font-family: 'Kite One', sans-serif;
     font-size: 30px ;
 }
 
-.rutor .burgare img {
-    width: 100%;
+.rutor .burgare img { /* Mjuk övergång */
+    width: 80%;
+    transition: all 0.2s;
 }
 .rutor .burgare img:hover {
-
+width: 90%;
+transform: scale(1.2);
 }
 
 .rutor .burgare p {    
-
+color: #682F1C;
+margin-bottom: 20px;
+text-transform: uppercase;
+font-size: 20px;
 }  
