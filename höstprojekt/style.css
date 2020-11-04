@@ -74,16 +74,16 @@ body {
 /* Tre boxar med information om Halloween */
 
 .infobox {
- width: 400px;
- padding: 200px;
- border: 10px solid ;
+ width: 300px;
+ padding: 0 200px 200px 0;
+ border: 8px solid darkorange;
  background-image: linear-gradient(to right bottom, #050508, #211e21, #3b3235, #564947, #6e6259);
- margin: 80px 0 0 0;
+ margin: 80px 0 0 15px;
  display: inline-block;
  
 }
 
-.infobox h1 {
-    font-size: 30px;
+.infobox h2 {
+    display: inline-block;
     
 }
