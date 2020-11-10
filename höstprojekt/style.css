@@ -13,6 +13,7 @@ body {
     background-image: url(./bilder/Halloween-bg.jpg);
 }
 
+/* Backgrunds utseende till navigation boxen */
 .meny {
     background-image: linear-gradient(to right bottom, #000000, #462324, #86442f, #bb732a, #dab016);
     border: 10px solid rgb(187, 78, 27);
@@ -23,17 +24,19 @@ body {
     margin: 10px 0px 0px auto;
 }
 
+/* Storlek och position för den första bilden åt top vänster kanten */
 .firstimg {
     width: 200px;
     float: left;
     margin-left: 20px;
 }
 
+/* Utseende av order "Halloween" inne i navigation boxen */
 .meny h2 {
     text-align: center;
     float: right;
     margin-right: 15px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Nosifer', cursive;
 }
 
@@ -48,6 +51,7 @@ body {
     padding: 0px 40px 0 40px;
 }
 
+/* Utseende på navigation knapparna  */
 .meny ul a {
     border: 10px solid rgb(148, 25, 142);
     background: rgb(148, 25, 142);
@@ -62,6 +66,7 @@ body {
     letter-spacing: 4px;
 }
 
+/* Om pekaren rör knappen, så kommer de komma ut svag grön ljus omkring */
 .meny ul a:hover {
     box-shadow: 0 0 20px rgb(92, 219, 19);
 }
@@ -75,18 +80,27 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+/* Boxen där text och bild läggs till inuti */
 .infobox {
  width: 400px;
  padding: 20px;
  border: 8px solid darkorange;
  background: green;
- margin: 110px 0 0 100px;
+ margin: 110px 0 100px 80px;
+ cursor: default;
+}
+
+/* När pekaren rör infoboxen, så kommer de röd ljus runt hela boxen */
+.infobox:hover {
+    box-shadow: 0px 0px 30px rgb(236, 2, 2);
 }
 
 .infobox img {
     width: 100%;
 }
 
+/* Det är sidans rubrik box */
 .h2-info {
     text-align: center;
     color: white;
@@ -98,14 +112,23 @@ body {
     background: rgba(194, 73, 17, 0.774);
     border: 5px solid purple;
     cursor: default;
+    letter-spacing: 3px;
 }
 
 .h2-info:hover {
     box-shadow: 0 0 20px blue;
 }
 
+
+/* Storleken och font family för texten inuti h2-info-box */
 .infobox p {
     font-family: 'Crete Round', serif;
     font-size: 18px;
     margin-bottom: 15px;
+}
+
+/* Texten blir röd och lite tjockare för några meningar */
+.bold-p {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
 }
