@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leka med DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Mixtra med webbsidan</h1>
+        <button onclick="nyTitel()">Ny titel</button>
+        <button onclick="nyFärg()">Ändra färger</button>
+        <button onclick="boom()">Boom!</button>
+        
+    </div>
+    <script>
+        function nyTitel() {
+            console.log("Det funkar!")
+            
+            // Ändra på titeln
+            document.title = "Tjohoo!"
+        }
+        function nyFärg() {
+            document.body.style.cssText = "background: red; color: blue;";
+        }
+        function boom() {
+            document.body.innerHTML = "<img src=\"./bilder/blast.jpg\" alt=\"Explosion\">";
+        }
+    </script>
+</body>
+</html>

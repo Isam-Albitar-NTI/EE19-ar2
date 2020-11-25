@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leka med DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Mixtra med webbsidan</h1>
+        <button onclick="mörkFärg()">Mörk Färg</button>
+        <button onclick="vitFärg()">Vit Färg</button>
+    </div>
+    <script>
+        //Function till knappen "Mörk Färg"
+        function mörkFärg() {
+            document.body.style.cssText = "background: black";
+        }
+        // Function till knappen "Vit Färg"
+        function vitFärg() {
+            document.body.style.cssText = "background: white";
+        }
+
+    </script>
+</body>
+</html>
