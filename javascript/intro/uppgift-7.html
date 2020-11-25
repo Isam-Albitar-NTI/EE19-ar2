@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intro till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Intro till Javascript</h1>
+    <script>
+        /* Skriv ett skript som tar en siffra som innehåller dagens temperatur i Celsius. 
+Skriptet ska sedan presentera hur många grader Fahrenheit det motsvarar enligt följande mall: "100 grader Celsius motsvarar 212 grader Fahrenheit". 
+Formeln för omvandlingen är F = (9/5)*C + 32 där F står för grader Fahrenheit och C för grader Celsius.*/
+
+        // Frågar användaren om temperatur i Celsius
+        var celsius = prompt("Ange en temperatur i Celsius");
+
+        // Räkna ut temperatur i Farenheit
+        var fahrenheit = 9/5*parseFloat(celsius) + 32;
+
+        // Skriv ut svaret
+        alert(celsius + " grader Celsius blir " + fahrenheit + " grader Farenheit");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intro till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Intro till Javascript</h1>
+    <script>
+        /* Skapa ett skript för beräkna kostnaden för att hyra bil hos en biluthyrningsfirma. 
+Startavgiften för att hyra bilen är 500:-, därefter kostar det ytterligare 5:-/km och 400:- för varje extra dag förutom den första. 
+Skriptet ska fråga hur många dagar man vill hyra bilen och hur många kilometer man vill köra.
+Skriptet ska sedan presentera den totala hyran.*/
+
+        // Frågar hur många dagar man vill hyra bilen
+        var antalDagar = prompt("Hur många dagar vill du hyra bilen?");
+
+        // Fråga hur många kilometer man vill köra
+        var antalKm = prompt("Hur många kilometer vill du köra?");
+
+        //Uträkning
+        var summa = 500 + 5 * antalKm + 400 * antalDagar;
+
+        // Skriv ut svaret
+        alert("Den totala hyran är "+ summa + " kr");
+
+    </script>
+</body>
+</html>

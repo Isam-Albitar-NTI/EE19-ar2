@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intro till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Intro till Javascript</h1>
+    <script>
+        /* Skapa ett skript som ber användaren mata in lönen för 3 anställda. 
+Skriptet ska sedan presentera medellönen för personalen.*/
+
+        // Frågar hur mycket varsinn person får för lön
+        var person1 = prompt("Hur mycket lön för person 1?");
+        var person2 = prompt("Hur mycket lön för person 2?");
+        var person3 = prompt("Hur mycket lön för person 3?");
+
+        // Dela upp dom tre personens lön för att få senare medellönen
+        var medellön = (parseInt(person1) + (parseInt(person2) + (parseInt(person3)) /3) );
+
+        // Skriv ut svaret
+        alert("Medellönen mellan tre personerna är" + medellön + " kr");
+
+    </script>
+</body>
+</html>

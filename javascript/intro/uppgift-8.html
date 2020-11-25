@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intro till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Intro till Javascript</h1>
+    <script>
+        /*Skapa ett nytt skript så att man kan omvandla från F° till C°. Formeln är C = (F - 32)*5/9.*/
+
+        // Frågar användaren om temperatur i Farenheit
+        var fahrenheit = prompt("Ange en temperatur i Celsius");
+
+        // Räkna ut temperatur i Celsius
+        var celsius = (parseFloat(fahrenheit) - 32) * 5/9;
+
+        // Skriv ut svaret
+        alert(fahrenheit + " grader Farenheit blir " + celsius + " grader Celsius");
+
+    </script>
+</body>
+</html>

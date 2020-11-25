@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Lyssna på klick</h1>
+        <button onclick="frågaNamn()">Ange namn</button>
+        <button onclick="frågaAdress()">Ange adress</button>
+    </div>
+    <script>
+        var namn, adress;
+        function frågaNamn() {
+            // Be användaren ange sitt namn
+            //Lagra det i variabeln namn
+            var namn = prompt("Ange ditt namn här.")
+
+            //Skriv ut i loggen
+            console.log(namn);
+        }
+        function frågaAdress() {
+            var adress = prompt("Var bor du?")
+            //Skriv ut loggen
+            console.log(adress);
+            alert("Hej, " + namn + " du bor på", adress)
+        }
+    </script>
+</body>
+</html>
