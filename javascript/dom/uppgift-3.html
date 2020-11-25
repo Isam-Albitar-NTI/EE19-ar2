@@ -8,15 +8,13 @@
 </head>
 <body>
     <div class="kontainer">
-        <h1>Uppgift 1</h1>
+        <h1>Uppgift 3</h1>
+        <button onclick="dangerZone()">(Danger Zone)</button>
     </div>
     <script>
-        
-        // Sätt in text för att ändra titel
-        var ändraTitel = prompt("Skriv din text för att ändra din titel")
-       
-            document.title = ändraTitel;
-        
+        function dangerZone() {
+            document.body.style.backgroundImage = "url(./bilder/giphy.webp)"
+        }
     </script>
 </body>
 </html>
