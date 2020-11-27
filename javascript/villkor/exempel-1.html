@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Inloggning</h1>
+        <button onclick="inloggning()">Ange lösenord</button>
+    </div>
+
+    <script>
+        function inloggning() {
+            var lösenord = prompt("Ange ett lösenord");
+
+            // Om lösenordet är rätt svara rätt!
+            if (lösenord == "UiGoku") {
+                alert("Bra jobbat!")
+            } else {
+                document.body.style.cssText = "background:red;";
+                alert("Fel lösenord! Sätt in en annan lösenord")
+                window.location.href = "https://www.arla.se/"
+            }
+        }
+    </script>
+</body>
+</html>
