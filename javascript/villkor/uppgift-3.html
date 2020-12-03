@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        /* Ett fik har en kampanj där personer äldre än 65 år och personer mellan 12 och 18 år erbjuds att köpa kaffe extra billigt.
+        Skriv ett skript som kollar om användaren får köpa kaffe extra billigt.
+        Skriptet får endast ha en if-sats. */
+
+        // Läs in ålder
+        var ålder = prompt("Hur gammal är du?")
+
+        // Personen äldre än 65 år och
+        /* if (ålder > 65) {
+            alert("Grattis du får köpa vårt kaffe extra billigt!");
+        } */
+
+       //.. personen mellan 12 och 18 år erbjuds... 
+       /* if (ålder >= 12 && ålder <= 18) {
+           alert("Grattis du får köpa vårt kaffe extra billigt!")
+       } */
+
+       if (ålder > 65 || (ålder >= 12 && ålder <= 18)) {
+        alert("Grattis du får köpa vårt kaffe extra billigt!");
+       }
+    </script>
+</body>
+</html>
