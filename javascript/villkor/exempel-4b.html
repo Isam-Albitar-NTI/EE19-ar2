@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 3b</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 3b</h1>
+    </div>
+
+    <script>
+
+        // Skapa ett skript som frågar användaren hur många datorer hen äger. Skriptet ska sedan skriva ut korrekt i singular eller plural.Det innebär att om användaren har en dator skrivs det ut "Du har 1 dator". Om användaren har tex 3 datorer skrivs det ut "Du har 3 datorer".Skriptet får endast ha en if-sats.
+
+        // frågar användaren hur många antal datorer hen har
+        var antaldata = prompt("Hur många datorer har du?");
+
+        if (antaldata == "1") {
+            
+            // Hen skriver dom har 1 data
+            alert("Du har 1 data.");
+
+        } else if (antaldata >= "1"){
+            
+            // Hen skriver dom har flera datorer
+            alert("Du har " + antaldata + " datorer");
+        }
+    </script>
+</body>
+</html>
