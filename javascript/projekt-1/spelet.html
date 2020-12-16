@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spelet typ Zork</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interaktiv berättelse</h1>
+
+    <script>
+        // Du vaknar klockan 10:00 och ska välja att antingen gå till köket eller till toan.
+
+        var namn = prompt("Vad heter du?");
+        var fråga = prompt("Godmorgon " + namn + " klockan är 10:00, du befinner dig på din säng. Vill du gå till toan eller till köket?");
+
+        if (fråga == "Köket" || fråga == "köket") {
+
+            // Du går till köket 
+            var fråga2 = prompt("Du befinner dig i köket och du vill öppna kylskåpet. (öppna)");
+
+            if (fråga2 == "öppna") {
+
+                // Du öppnar kylskåpen men det finns inget mat inuti.
+                alert("Oh nej! Kylskåpet är tomt! Gå till toan istället och sen sov igen.");
+
+            }
+
+
+        } else if (fråga == "Toan" || fråga == "toan") {
+
+            // Du väljer att gå till toan och ska välja att gå till toaletten eller borsta tänderna först.
+            var fråga2b = prompt("Du går in till toan och du vet inte om du ska till toaletten först eller borsta tänderna först. Vad väljer du? (toaletten/borsta)");
+
+            if (fråga2b == "toaletten" || fråga2b == "Toaletten") {
+
+                // Du valde att gå till toaletten först och sen borstar dina tänder
+                alert("Du använde toaletten först och sen borstade dina tänder. Bra jobbat!");
+
+            } else if (fråga2b == "Borsta" || fråga2b == "borsta") {
+                alert("Du borstar dina tänder i 2 minuter och sen använder toaletten. Bra jobbat!");
+
+            }
+        }
+
+
+    </script>
+</body>
+</html>
