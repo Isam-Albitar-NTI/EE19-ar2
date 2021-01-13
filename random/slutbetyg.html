@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slutbetyg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Slutbetyget</h1>
+        <button onclick="slutBetyg()">Gissa slutbetyg</button><br>
+        <input type="text">
+    </div>
+    <script>
+        const elementInput = document.querySelector("input")
+        function slutBetyg() {
+            // slutbetyg: F, E, D, C, B, A
+            // Slumpa fram ett tal
+            var slumptal = Math.floor(Math.random() * 6);  // 0,1,2,3,4,5
+            //alert("slumptal = " + slumptal);
+            
+
+            if (slumptal == 0) {
+            elementInput.value = "Du får slutbetyget F 🤢"
+
+            } else if (slumptal == 1)
+            elementInput.value = "Du får slutbetyget E 😐"
+
+            else if (slumptal == 2)
+            elementInput.value = "Du får slutbetyget D 🤔"
+
+            else if(slumptal == 3)
+            elementInput.value = "Du får slutbetyget C 😌"
+
+            else if(slumptal == 4)
+            elementInput.value = "Du får slutbetyget B 😁"
+
+            else if (slumptal == 5)
+            elementInput.value = "Du får slutbetyget A 🤑"
+            
+        }
+
+        switch (slumptal) {
+            
+            case 1:
+                alert("Du får slutbetyg E 😐")
+                break;
+            case 2:
+                alert("Du får slutbetyg D 🤔")
+                break;
+            case 3:
+                alert("Du får slutbetyg C 😌")
+                break;
+            case 4:
+                alert("Du får slutbetyg B 😁")
+                break;
+            case 5:
+                alert("Du får slutbetyg A 🤑")
+                break;
+
+            default:
+            alert("Du får slutbetyg F 🤢")
+                break;
+        }
+        
+    </script>
+
+</body>
+</html>

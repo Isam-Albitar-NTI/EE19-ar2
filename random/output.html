@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slutbetyg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Slutbetyg</h1>
+        <button onclick="slutBetyg()">Gissa slutbetyg</button><br>
+        <input type="text">
+    </div>
+
+    <script>
+        //Grabba tag i inputrutan
+        const elementInput = document.querySelector("input")
+
+        function slutBetyg() {
+            var slumptal = Math.floor(Math.random() * 6);  // 0,1,2,3,4,5
+
+            // Skriv ut i input rutan
+            elementInput.value = "Slumptalet = " + slumptal;
+        }
+    </script>
+
+</body>
+</html>

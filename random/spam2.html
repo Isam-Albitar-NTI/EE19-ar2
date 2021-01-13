@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spam check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Spam Check</h1>
+        <input class="fråga" type="text"><br>
+        <input class="gissning" type="text"><button onclick="gissningCheck()">Gissa!</button><br>
+        <input class="svar" type="text">
+    </div>
+
+    <script>
+        // Peka ut element vi skall jobba med
+        const elementFråga = document.querySelector(".fråga");
+        const elementGissning = document.querySelector(".gissning");
+        const elementSvar = document.querySelector(".svar");
+
+        console.log(elementFråga);
+        console.log(elementGissning);
+        console.log(elementSvar);
+
+        // Skriv en text i den första rutan
+        // elementFråga.value = "Hejhej!" // Värdet i rutan är "Hejhej!
+
+        // Ställ en fråga 
+        elementFråga.value = "Vad är 5 + 7?";
+
+        function gissningCheck() {
+            // Läsa av gissningen
+            var gissning = element.Gissning.value;
+            // Kolla om det är rätt svar
+
+            if (gissning == 12) {
+                // Rätt svar
+                elementSvar.value = "Rätt svar!";
+            } else {
+                // Fel svar
+                elementSvar.value = "Fel svar!"
+            }
+        }
+        
+    </script>
+</body>
+</html>
