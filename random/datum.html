@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Dagens Datum</h1>
+        <button onclick="visaDatum()">Klick här!</button>
+        <input type="text" class="datum">
+    </div>
+    
+    <script>
+    
+        /* function visaDatum() {
+            const infoDatum = new Date();
+            const textDatum = document.querySelector('.datum')
+            infoDatum.value = textDatum
+            
+
+        } */
+        function visaDatum() {
+            const infoDatum = new Date();
+            const textDatum = document.querySelector('.datum')
+            textDatum.value = infoDatum
+            
+
+        }
+    </script>
+</body>
+</html>
