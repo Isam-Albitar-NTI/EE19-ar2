@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loopa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Loopa</h1>
+        <button onclick="loopa()">Loopa!</button>
+        <p></p>
+    </div>
+    
+    <script>
+        // välja element vi skall jobba med
+        const eResultat = document.querySelector("p"); // Valt ut p
+
+        function loopa() {
+
+            var gånger = 1;
+            while (gånger < 17) {
+                eResultat.textContent += "🐒" + "<br>";
+                gånger++;
+            }
+            
+
+            // Uprepa koden 16 gånger
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 1</h1>
+        <button onclick="fråga1()">Starta!</button>
+    </div>
+
+    <script>
+        function fråga1() {
+
+            var svar1 = "Ryssland";
+
+            while (true) {
+
+                var fråga1 = prompt("Vilket är folkrikaste land?");
+
+                if (fråga1 == svar1) {
+                    alert("Du har rätt! Bra jobbat!")
+                    break;
+
+                } else {
+                    alert("Fel! Försök igen!");
+                }
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>

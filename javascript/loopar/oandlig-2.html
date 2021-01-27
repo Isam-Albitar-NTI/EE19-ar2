@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gissa ett tal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <button onclick="loppa()">Är du redo?</button>
+    </div>
+
+    <script>
+        function loppa() {
+            // Slumptal 1-50
+            var slumptal = Math.ceil(Math.random() * 50);
+            console.log(slumptal);
+
+            // Antal chanser
+            var chans = 5;
+
+            // Köra en oändlig loop
+            while (chans > 0) {
+                chans--; // minska med ett 
+                console.log("Chans", chans);
+                
+                // är det några chanser kvar?
+                if (chans == 0) {
+                    
+                    break;
+                }
+
+                // Användaren gissar
+                var gissning = prompt("Gissa ett tal.");
+
+                // testa om rätt svar
+                if (gissning == slumptal) {
+                    alert("Great, du är så smart!");
+                    break;
+                } else {
+                    alert("Nope, försok igen!");
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
