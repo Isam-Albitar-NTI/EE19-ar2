@@ -9,12 +9,23 @@
 <body>
     <div class="kontainer">
         <h1>Uppgift 2</h1>
-        <button onclick="fråga2()">Starta!</button>
+        <button onclick="login()">Starta!</button>
     </div>
 
     <script>
-        function fråga2() {
-            
+        function login() {
+
+            while (true) {
+                var lösen = prompt("Ange lösenord");
+
+                if (lösen == "12345") {
+                    alert("Du är inloggad");
+                    break;
+                } else {
+                    alert("Fel lösenord");
+                    
+                }
+            }
         }
 
     </script>

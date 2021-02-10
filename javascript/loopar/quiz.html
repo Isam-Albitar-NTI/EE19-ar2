@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Quiz</h1>
+        <p>Gissa rätt svar på 5 frågor</p>
+        <button onclick="quiz()">Starta quizen!</button>
+    </div>
+
+    <script>
+        function quiz() {
+            var varv = 0;
+            var poäng = 0;
+
+            while (varv < 5) {
+                var slumptal = Math.ceil(Math.random() * 5);
+                console.log(slumptal);
+
+                if (slumptal = 1) {
+                    var gissning = prompt("Varför är mjölk bra?\n(1=skeleten, 2=dansa, 3=monke)");
+
+                    if (gissning == "1") {
+                        poäng++;
+                    }
+
+
+                }
+                if (slumptal = 2) {
+                    var gissning = prompt("Vad är Genshin Impact?\n(1=Mat, 2=Spel, 3=boxing)");
+
+                    if (gissning == "2") {
+                        poäng++;
+                    }
+
+
+                }
+                if (slumptal = 3) {
+                    var gissning = prompt("Vad smakar bäst?\n(1=Vatten, 2=Fanta, 3=Mjölk)");
+
+                    if (gissning == "3") {
+                        poäng++;
+                    }
+
+
+                }
+                if (slumptal = 4) {
+                    var gissning = prompt("Vem har skapat Fortnite?\n(1=EA, 2=Epic Games, 3=Squareenix)");
+
+                    if (gissning == "4") {
+                        poäng++;
+                    }
+
+
+                }
+                if (slumptal = 5) {
+                    var gissning = prompt("Vem gjorde låten Lucid Dreams?\n(1=Triple Redd, 2=Juice WRLD, 3=Eminem)");
+
+                    if (gissning == "5") {
+                        poäng++;
+                    }
+
+                }
+                varv++;
+            }
+            alert("Du fick " + poäng + " poäng");
+        }
+
+    </script>
+</body>
+</html>
