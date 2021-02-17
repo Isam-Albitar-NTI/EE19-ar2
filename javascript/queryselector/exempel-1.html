@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Läsa från sidan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Läsa från sidan</h1>
+
+        <h2>Input</h2>
+        <label>Ange förnamn <input class="fnamn" type="text"></label>
+        <label>Ange Efternamn <input class="enamn" type="text"></label>
+        <label>Vilken bilmärke tycker du om? <input class="bilMärke" type="text"></label>
+        <button onclick="läsa()">Skicka</button>
+    </div>
+
+    <script>
+        function läsa() {
+            // Hitta input-rutan
+            const eInputFnamn = document.querySelector(".fnamn");
+            const eInputEnamn = document.querySelector(".enamn");
+            const eInputbilMärke = document.querySelector(".bilMärke");
+            //console.log(eInput);
+
+            // Läsa av input-rutan
+            var fnamn = eInputFnamn.value;
+            var enamn = eInputEnamn.value;
+            var bilMärke = eInputbilMärke.value;
+            console.log(fnamn, enamn, bilMärke);
+
+            alert("Hej " + fnamn + " " + enamn + ", trevligt att se dig!" + " Intresant, så du gillar " + bilMärke + ".");
+        }
+
+    </script>
+</body>
+</html>

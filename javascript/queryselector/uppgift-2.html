@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>är du myndig för att ta emot körkort?</h1>
+        
+        <h2>Input</h2>
+        <label>Ange förnamn <input class="förnamn" type="text"></label>
+        <label>Ange efternamn <input class="efternamn" type="text"></label>
+        <label>Ange ålder<input class="ålder" type="text"></label>
+
+        <button onclick="körKort()">Testa Här!</button>
+
+        <h2>Output</h2>
+        <label>Svar <input class="svar" type="text"></label>
+    </div>
+
+    <script>
+        const eInputFörnamn = document.querySelector(".förnamn");
+        const eInputEfternamn = document.querySelector(".efternamn");
+        const eInputÅlder = document.querySelector(".ålder");
+        const eInputSvar = document.querySelector(".svar")
+        
+        function körKort() {
+            var fNamn = eInputFörnamn.value;
+            var eNamn = eInputEfternamn.value;
+            var ålder = eInputÅlder.value;
+            var svar = eInputSvar.value;
+
+            if (ålder >= "18") {
+                eInputSvar.value = "Du är myndig! Du kan skaffa en körkort!";
+            } else {
+                eInputSvar.value = "Du är inte myndig, du måste vara 18 år gammal.";
+            }
+        }
+
+    </script>
+</body>
+</html>
