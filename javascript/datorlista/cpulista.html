@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datorlista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="cpu.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Datorlista</h1>
+        <label>Ange namn <input class="form-control" type="text"></label>
+        <label>Ange cpu 
+            <select class="form-select">
+                <option value="i7">Intel Core i7-9700K</option>
+                <option value="i9">Intel Core i9-9900K</option>
+                <option value="i5">Intel Core i5-10600K</option>
+                <option value="amd9">AMD Ryzen 9 5900X</option>
+                <option value="amd5">AMD Ryzen 5 5600X</option>
+                <option value="amd7">AMD Ryzen 7 3700X</option>
+            </select>
+        </label>
+
+        <button class="btn btn-primary">Beställ</button>
+
+        <h3>Lista</h3>
+
+        <ul class="list-group"></ul>
+    </div>
+
+    <script src="./cpu.js"></script>
+</body>
+</html>
