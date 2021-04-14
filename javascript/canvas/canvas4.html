@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Hitta canvas elementet
+        const rityta = document.querySelector("canvas");
+
+        // Gör ritytan större
+        rityta.width = 800;
+        rityta.height = 600;
+
+        // Slå på ritmotion (rit-api)
+        var ctx = rityta.getContext("2d");
+
+        // Rita Tjeckien flaggan
+
+        // Röda förgen
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 250, 500, 150);
+
+        // Vita färgen
+        ctx.fillStyle = "white";
+        ctx.fillRect(100, 100, 500, 150);
+        ctx.beginPath();
+        ctx.moveTo(598, 100);
+        ctx.lineTo(100, 100);
+        ctx.lineTo(598, 100);
+        ctx.lineTo(598, 250);
+        ctx.stroke();
+
+        // Blå:a förgen
+        ctx.fillStyle = "blue";
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.lineTo(300, 250);
+        ctx.lineTo(100, 400);
+        ctx.lineTo(100, 100);
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>

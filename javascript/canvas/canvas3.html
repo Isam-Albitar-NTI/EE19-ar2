@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Hitta canvas elementet
+        const rityta = document.querySelector("canvas");
+
+        // Gör ritytan större
+        rityta.width = 800;
+        rityta.height = 600;
+
+        // Slå på ritmotion (rit-api)
+        var ctx = rityta.getContext("2d");
+
+        // Rita Sverige flaggan
+        ctx.fillStyle = "blue";
+        ctx.fillRect(200, 100, 400, 200);
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(300, 100, 50, 200);
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(200, 180, 400, 40);
+        
+    </script>
+</body>
+</html>

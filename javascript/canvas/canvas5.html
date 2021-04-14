@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Hitta canvas elementet
+        const rityta = document.querySelector("canvas");
+
+        // Gör ritytan större
+        rityta.width = 800;
+        rityta.height = 600;
+
+        // Slå på ritmotion (rit-api)
+        var ctx = rityta.getContext("2d");
+
+        // Rita ett hus
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.lineWidth =10;
+        ctx.moveTo(300, 500);
+        ctx.lineTo(300, 350);
+        ctx.lineTo(400, 350);
+        ctx.lineTo(400, 500);
+        ctx.lineTo(650, 500);
+        ctx.lineTo(650, 200);
+        ctx.lineTo(740, 200);
+        ctx.lineTo(600, 100);
+        ctx.lineTo(600, 50)
+        ctx.stroke();
+
+    </script>
+</body>
+</html>
