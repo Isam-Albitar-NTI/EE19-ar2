@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skriva text</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+        // Hitta canvas elementet
+        const rityta = document.querySelector("canvas");
+
+        // Gör ritytan större
+        rityta.width = 600;
+        rityta.height = 600;
+
+        // Slå på ritmotion (rit-api)
+        var ctx = rityta.getContext("2d");
+
+        // Stillar
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 100, 50, 50);
+        ctx.strokeStyle = "green";
+        ctx.strokeRect(200, 100, 50, 50);
+
+        // Skriv lite text
+        ctx.font = "60px Antonio";
+        ctx.fillText("Isam Al Bitar", 100, 300);
+        ctx.strokeText("Isam Al Bitar", 100, 300);
+    </script>
+</body>
+</html>
